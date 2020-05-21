@@ -1,0 +1,53 @@
+.hero {
+    width: 100%;
+    // height: 100vh;
+    padding: 35vh 1vh;
+    background-image: url(/src/assets/images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-width: 55rem) {
+        height: 100vh;
+    }
+
+    &__container {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+
+
+
+// .s-hero {
+//     width: 100%;
+//     background-image: url('/src/assets/images/hero_image.jpg');
+//     background-repeat: no-repeat;
+//     object-fit: cover;
+//     background-position: center;
+// }
+
+// .c-hero {
+
+//     &__wrapper {
+//         width: 100%;
+//         max-width: 50%;
+//         margin-left: auto;
+//         padding-top: 25%;
+//         padding-bottom: 30%;
+//     }
+
+//     &__title {
+//         padding-bottom: 10px;
+//     }
+
+//     &__description {
+//         padding-bottom: 20px;
+//     }
+// }
+

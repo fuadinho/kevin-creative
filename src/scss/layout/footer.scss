@@ -1,0 +1,92 @@
+.footer {
+    background-color: $color-primary;
+    color: $color-secondary-light;
+
+    &__wrapper {
+        padding: 4rem;
+
+        @media screen and (max-width: 35rem) {
+            padding: 2rem;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 55rem) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+    &__description {
+
+        @media screen and (min-width: 55rem) {
+            width: 46%;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+
+        @media screen and (min-width: 55rem) {
+            margin: 0 0 0 2rem;
+            width: 46%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+
+    &__nav {
+        @media screen and (min-width: 55rem) {
+            padding-right: 1rem;
+
+            &:last-of-type {
+                padding-right: 0;
+            }
+        }
+    }
+
+    &__items {
+        text-align: left;
+    }
+
+    &__item {
+        padding: .4rem 0;
+
+        @media screen and (max-width: 35rem) {
+            padding: .3rem .6rem 0  0;
+        }
+
+        &:first-of-type {
+            font-weight: 900;
+
+            @media screen and (min-width: 55rem)  {
+                padding-top: 0;
+            }
+        }
+
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-secondary-light;
+
+        @media screen and (max-width: 35rem) {
+            font-size: .84rem;
+        }
+
+        @media screen and (min-width: 55rem) {
+            font-size: 1.2rem;
+            
+            &:hover {
+                color: $color-secondary;
+                transition: ease-in-out .3s;
+            }
+        }
+    }
+}

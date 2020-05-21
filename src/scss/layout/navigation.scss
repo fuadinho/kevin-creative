@@ -1,0 +1,36 @@
+.nav {
+
+    @media screen and (min-width: 55rem) {
+        margin-right: 1rem;
+    }
+
+    &__items {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+        margin: 0 1rem;
+    }
+
+    &__link {
+        font-family: $font-family-primary;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 0.7rem;
+        cursor: pointer;
+        color: $color-link;
+
+        @media screen and (min-width: 55rem) {
+            
+            &:hover {
+                color: $color-secondary;
+                transition: ease-in-out .3s;
+            }
+        }
+
+    }
+
+}

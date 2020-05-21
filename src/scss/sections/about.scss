@@ -1,0 +1,64 @@
+.about {
+
+    @media screen and (min-width: 55rem) {
+        background-image: url('/src/assets/images/who-we-are.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 18rem;
+        position: relative;
+
+        @media screen and (max-width: 35rem) {
+            padding: 13rem;
+        }
+
+    }
+
+    &__wrapper {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+    &__container {
+        background-color: $color-primary;
+        text-align: center;
+        padding: 3rem;
+        outline: 2px solid $color-secondary;
+        outline-offset: -2.5rem;
+        position: relative;
+
+        @media screen and (min-width: 55rem) {
+            position: absolute;
+            top: -4rem;
+            left: 1rem;
+            width: 60%;
+            max-width: 600px;
+            text-align: left;
+            padding: 2.5rem;
+        }
+    }
+
+    &__title {
+        color: $color-secondary;
+        margin-bottom: 1rem;
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $color-primary;
+        padding: 0 .5rem;
+
+        @media screen and (max-width: 35rem) {
+            top: .5rem;
+            padding: 1rem .4rem;
+        }
+
+        @media screen and (min-width: 55rem) {
+            padding: 0 .6rem;
+            top: .8rem;
+        }
+    }
+
+    &__text {
+        padding: 2rem;
+    }
+}
